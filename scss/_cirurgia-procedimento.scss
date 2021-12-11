@@ -1,0 +1,41 @@
+@import "mixins";
+@import "breakpoint";
+
+#cirurgia-procedimento__texto p.terapias-conteudo__paragrafo1 {
+  margin-bottom: 50px;
+}
+
+#cirurgia-procedimento__texto p.terapias-conteudo__paragrafo1 {
+  margin-bottom: 50px;
+}
+
+#cirurgia-procedimento__texto h5.terapias-conteudo__titulo2 {
+  @include paragraph-color1;
+  color: $fourth-color;
+}
+section#cirurgia-procedimento__texto {
+  background-color: $primary-color;
+  padding: 30px 0px 30px 0px;
+}
+
+section#cirurgia-procedimento__texto p.terapias-conteudo__paragrafo1 {
+  @include paragraph-banner-three;
+  color: #fff;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 980) {
+  section#cirurgia-procedimento__texto .terapias-conteudo__img img {
+    margin-top: -80px;
+    width: 90%;
+    margin-top: -100px;
+  }
+  section#cirurgia-procedimento__texto .terapias-conteudo__texto {
+    margin-top: 40px;
+  }
+
+  img#image-cirurgia {
+    margin-top: -107px;
+    width: 100%;
+  }
+}

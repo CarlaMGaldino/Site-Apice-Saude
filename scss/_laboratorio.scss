@@ -1,0 +1,73 @@
+@import "mixins";
+@import "breakpoint";
+
+section.laboratorio {
+  padding: 300px 0px 0px 0px;
+}
+
+.laboratorio-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h3.laboratorio-titulo {
+  @include title-three;
+  color: $primary-color;
+  text-transform: uppercase;
+}
+
+p.laboratorio-paragrafo1 {
+  @include paragraph-span-2;
+  font-weight: bold;
+  color: $primary-color;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+p.laboratorio-paragrafo2 {
+  @include paragraph-span-2;
+  color: $primary-color;
+  margin-bottom: 30px;
+}
+
+li.laboratorio-lista {
+  @include paragraph-span-2;
+  color: $primary-color;
+}
+
+.laboratorio-texto,
+.laboratorio-img {
+  width: 48%;
+}
+
+.laboratorio-img img {
+  width: 75%;
+}
+
+@media screen and (max-width: 990px) {
+  .laboratorio-conteudo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .laboratorio-texto,
+  .laboratorio-img {
+    width: 100%;
+  }
+
+  .laboratorio-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .laboratorio-img img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.laboratorio {
+    padding: 237px 0px 0px 0px;
+  }
+}

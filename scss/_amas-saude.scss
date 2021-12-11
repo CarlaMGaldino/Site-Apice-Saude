@@ -1,0 +1,113 @@
+@import "mixins";
+@import "breakpoint";
+
+section.amas-saude__banner {
+  padding: 278px 0px 0px 0px;
+}
+
+.amas-saude__banner-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.amas-saude__banner-box-texto,
+.amas-saude__banner-box-img {
+  width: 48%;
+}
+
+h3.amas-saude__banner-box-titulo1 {
+  @include title-three;
+  color: $primary-color;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h4.amas-saude__banner-box-titulo1 {
+  @include title-two-text;
+  color: $primary-color;
+  margin-bottom: 20px;
+}
+
+p.amas-saude__banner-paragrafo1,
+p.amas-saude__banner-paragrafo2,
+p.amas-saude__banner-paragrafo3,
+p.amas-saude__banner-paragrafo4,
+p.amas-saude__banner-paragrafo5 {
+  @include paragraph-banner-three;
+  font-size: 24px;
+  color: $primary-color;
+  margin-bottom: 30px;
+}
+
+.amas-saude__banner-box-img img {
+  max-width: 80%;
+}
+
+section.guia {
+  background-color: $primary-color;
+  padding: 100px 0px;
+}
+
+h3.guia-beneficiario__titulo {
+  @include title-two-text;
+  color: $fourth-color;
+  margin-bottom: 50px;
+}
+
+p.guia-beneficiario__paragrafo1,
+p.guia-beneficiario__paragrafo2,
+p.guia-beneficiario__paragrafo3,
+p.guia-beneficiario__paragrafo4 {
+  @include paragraph-span-2;
+  color: $fourth-color;
+  margin-bottom: 50px;
+}
+
+.guia-befeficiario a {
+  @include paragraph-banner-three;
+  color: $primary-color;
+  max-width: 633px;
+  height: 63px;
+  border-radius: 10px;
+  background: #dce3dd;
+  border: 1px solid #37613c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+@media screen and (max-width: 980px) {
+  .amas-saude__banner-conteudo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .amas-saude__banner-box-texto,
+  .amas-saude__banner-box-img {
+    width: 100%;
+  }
+  .amas-saude__banner-box-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .amas-saude__banner-box-img img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.guia {
+    background-color: #37613c;
+    padding: 30px 0px;
+  }
+  p.amas-saude__banner-paragrafo1,
+  p.amas-saude__banner-paragrafo2,
+  p.amas-saude__banner-paragrafo3,
+  p.amas-saude__banner-paragrafo4,
+  p.amas-saude__banner-paragrafo5 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}

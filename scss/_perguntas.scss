@@ -1,0 +1,113 @@
+@import "mixins";
+@import "breakpoint";
+
+section.perguntas-frequentes {
+  padding: 350px 0px 0px 0px;
+}
+
+.perguntas-frequentes__img img {
+  max-width: 100%;
+}
+
+.perguntas-frequentes__img,
+.perguntas-frequentes__titulos {
+  width: 48%;
+}
+.perguntas-frequentes__conteudo {
+  display: flex;
+  justify-content: space-between;
+}
+
+h4.perguntas-frequentes__titulo1 {
+  @include title-five;
+  color: $primary-color;
+  text-transform: uppercase;
+}
+
+h3.perguntas-frequentes__titulo2 {
+  @include title-three;
+  color: $primary-color;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+li.perguntas-frequentes__lista-li {
+  @include paragraph-span;
+  color: $primary-color;
+  text-transform: uppercase;
+  width: 88%;
+  height: 68px;
+  border-radius: 10px;
+  background: #dce3dd;
+  border: 1px solid #37613c;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.perguntas-frequentes__img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 1000px) {
+  .perguntas-frequentes__conteudo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .perguntas-frequentes__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  ul.perguntas-frequentes__lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li.perguntas-frequentes__lista-li {
+    width: 650px;
+    padding: 10px;
+  }
+  h4.perguntas-frequentes__titulo1 {
+    font-size: 40px;
+  }
+  section.perguntas-frequentes {
+    padding: 251px 0px 0px 0px;
+  }
+  li.perguntas-frequentes__lista-li p {
+  }
+}
+
+@media screen and (max-width: 768px) {
+  li.perguntas-frequentes__lista-li {
+    width: 350px;
+    padding: 10px;
+  }
+
+  h4.perguntas-frequentes__titulo1 {
+    font-size: 18px;
+  }
+  section.perguntas-frequentes {
+    padding: 212px 0px 0px 0px;
+  }
+  li.perguntas-frequentes__lista-li {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  li.perguntas-frequentes__lista-li {
+    width: 281px;
+    padding: 10px;
+  }
+}

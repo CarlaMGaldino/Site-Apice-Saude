@@ -1,0 +1,57 @@
+@import "mixins";
+@import "breakpoint";
+
+section.ouvidoria-page {
+  padding: 359px 0px 150px 0px;
+}
+
+h3.ouvidoria-page__conteudo-titulo {
+  @include title-three;
+  color: $primary-color;
+  text-transform: uppercase;
+}
+p.ouvidoria-page__conteudo-texto1 {
+  @include paragraph-banner;
+  line-height: 40px;
+  font-weight: normal;
+  color: $primary-color;
+}
+
+.ouvidoria-page__conteudo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ouvidoria-page__conteudo-img img {
+  width: 100%;
+}
+
+.ouvidoria-page__conteudo-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 980px) {
+  .ouvidoria-page__conteudo {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  h3.ouvidoria-page__conteudo-titulo {
+    text-align: center;
+  }
+
+  p.ouvidoria-page__conteudo-texto1 {
+    text-align: center;
+  }
+  .ouvidoria-page__conteudo-img img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.ouvidoria-page {
+    padding: 225px 0px 18px 0px;
+  }
+}

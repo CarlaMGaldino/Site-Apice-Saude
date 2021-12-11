@@ -1,0 +1,62 @@
+@import "mixins";
+@import "breakpoint";
+
+section.consulta-social {
+  padding: 270px 0px 0px 0px;
+}
+
+.consulta-social__banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.consulta-social__texto,
+.consulta-social__img {
+  width: 48%;
+}
+
+h3.consulta-social__titulo {
+  @include title-five;
+  color: $primary-color;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+p.consulta-social__paragrafo1,
+p.consulta-social__paragrafo2,
+p.consulta-social__paragrafo3 {
+  @include paragraph-banner-three;
+  color: $primary-color;
+  margin-bottom: 30px;
+}
+
+.consulta-social__img img {
+  max-width: 93%;
+}
+
+@media screen and (max-width: 980px) {
+  section.consulta-social {
+    padding: 6px 0px 0px 0px;
+  }
+  .consulta-social__banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .consulta-social__texto,
+  .consulta-social__img {
+    width: 100%;
+  }
+  .consulta-social__img img {
+    max-width: 52%;
+  }
+  .consulta-social__img {
+    display: flex;
+    justify-content: center;
+  }
+  p.consulta-social__paragrafo1,
+  p.consulta-social__paragrafo2,
+  p.consulta-social__paragrafo3 {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,98 @@
+@import "mixins";
+@import "breakpoint";
+
+section.odontologia {
+  background-image: url(/imagens/imagens-site/odonto-min.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 142px 0px 0px 0px;
+}
+
+.odontologia-img {
+  display: none;
+}
+
+.odontologia-conteudo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.odontologia-texto,
+.odontologia-img {
+  width: 48%;
+}
+
+.odontologia-img img {
+  width: 100%;
+}
+
+h4.odontologia-texto__titulo1 {
+  @include title-five;
+  color: $primary-color;
+  text-transform: uppercase;
+}
+
+h3.odontologia-texto__titulo2 {
+  @include title-three;
+  color: $primary-color;
+  text-transform: uppercase;
+}
+
+p.odontologia-texto__paragrafo1 {
+  @include paragraph-span-2;
+  color: $primary-color;
+  margin: 30px 0px 30px 0px;
+}
+
+li.odotonlogia-texto__lista-li {
+  @include paragraph-span-2;
+  color: $primary-color;
+}
+
+li.odotonlogia-texto__lista-li_2 {
+  @include paragraph-span-2;
+  color: $primary-color;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .odontologia-img {
+    display: block;
+  }
+
+  .odontologia-texto,
+  .odontologia-img {
+    width: 100%;
+  }
+
+  section.odontologia {
+    background-blend-mode: lighten;
+    background-color: #fff;
+  }
+
+  .odontologia-img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .odontologia-img__imagem {
+    display: flex;
+    justify-content: center;
+  }
+  .odontologia-img img {
+    width: 70%;
+  }
+
+  p.odontologia-texto__paragrafo1 {
+    width: 85%;
+  }
+}
+
+/*slide*/
+
+section.odontologia-slide {
+  padding: 100px 0px;
+  background-color: $primary-color;
+}

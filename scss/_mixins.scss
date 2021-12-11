@@ -1,0 +1,266 @@
+@import "breakpoint";
+
+$primary-color: #37613c;
+$secondary-color: #f4f6f6;
+$tertiary-color: #b6d8b9;
+$fourth-color: #fff;
+
+@mixin title {
+  font-family: "Gotham" sans-serif;
+  font-weight: 900;
+  font-size: 110px;
+  line-height: 1em;
+  text-align: left;
+  color: $primary-color;
+  @include breakpoint(large-only) {
+    font-size: 73px;
+  }
+
+  @include breakpoint(small-only) {
+    font-size: 30px;
+  }
+}
+
+@mixin title-two {
+  font-family: "Gotham" sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 0.5em;
+  text-align: left;
+  @include breakpoint(small-only) {
+    font-size: 20px;
+  }
+}
+
+@mixin title-two-text {
+  font-family: "Gotham" sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  text-align: left;
+  @include breakpoint(small-only) {
+    font-size: 20px;
+  }
+}
+
+@mixin title-three {
+  font-family: "Gotham" sans-serif;
+  font-weight: 900;
+  font-size: 82px;
+  text-align: left;
+  color: $primary-color;
+
+  @include breakpoint(large-only) {
+    font-size: 52px;
+  }
+
+  @include breakpoint(small-only) {
+    font-size: 25px;
+  }
+}
+
+@mixin title-four {
+  font-family: "Gotham" sans-serif;
+  font-weight: 300;
+  font-size: 67px;
+  letter-spacing: 0.5em;
+  text-align: left;
+  @include breakpoint(small-only) {
+    font-size: 20px;
+  }
+}
+
+@mixin title-five {
+  font-family: "Gotham" sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  text-align: left;
+  @include breakpoint(large-only) {
+    font-size: 40px;
+  }
+
+  @include breakpoint(small-only) {
+    font-size: 20px;
+  }
+}
+
+@mixin title-six {
+  font-family: "Gotham" sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+  text-align: left;
+  @include breakpoint(small-only) {
+    font-size: 20px;
+  }
+}
+
+@mixin sub-title {
+  font-family: "Gotham" sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+  text-align: left;
+  line-height: 35px;
+  @include breakpoint(small-only) {
+    font-size: 16px;
+  }
+}
+
+@mixin paragraph-span {
+  font-family: "Gotham" sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: left;
+  line-height: 35px;
+  color: $primary-color;
+  @include breakpoint(small-only) {
+    font-size: 18px;
+    line-height: 35px;
+  }
+}
+
+@mixin paragraph-span-2 {
+  font-family: "Gotham" sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 35px;
+  @include breakpoint(super-large) {
+    font-size: 20px;
+  }
+
+  @include breakpoint(large-only) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@mixin paragraph-banner {
+  font-family: "Gotham" sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: left;
+  @include breakpoint(small-only) {
+    font-size: 16px;
+  }
+}
+
+@mixin paragraph-banner-three {
+  font-family: "Gotham" sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: left;
+  @include breakpoint(small-only) {
+    font-size: 16px;
+  }
+}
+
+@mixin paragraph-color1 {
+  font-family: "Gotham" sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+  text-align: left;
+  color: $fourth-color;
+  @include breakpoint(small-only) {
+    font-size: 16px;
+  }
+}
+
+@mixin paragraph-color2 {
+  font-family: "Gotham" sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: left;
+  @include breakpoint(small-only) {
+    font-size: 16px;
+  }
+}
+
+@mixin paragraph-color3 {
+  font-family: "Gotham" sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 25px;
+  @include breakpoint(small-only) {
+    font-size: 16px;
+  }
+}
+
+@mixin paragraph-text {
+  font-family: "Gotham" sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: left;
+  @include breakpoint(super-small-only) {
+    font-size: 14px;
+  }
+}
+@mixin paragraph-text2 {
+  font-family: "Gotham" sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+  @include breakpoint(super-small-only) {
+    font-size: 14px;
+  }
+}
+
+@mixin paragraph-text-2 {
+  font-family: "Gotham" sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+  color: #e7f5f5;
+  @include breakpoint(super-small-only) {
+    font-size: 14px;
+  }
+}
+
+@mixin button-page-1 {
+  font-family: "Gotham" sans-serif;
+  width: 250px;
+  height: 56px;
+  border-radius: 28px;
+  font-size: 27px;
+  text-align: center;
+  color: $secondary-color;
+  background-color: #37613c;
+  padding: 15px;
+  @include breakpoint(small-only) {
+    font-size: 16px;
+  }
+}
+
+@mixin button-page-hover-1 {
+  background-color: $tertiary-color;
+  font-size: 27px;
+  transition: 0, 5s;
+  @include breakpoint(small-only) {
+    font-size: 16px;
+  }
+}
+
+@mixin button-page-2 {
+  width: 315px;
+  height: 56px;
+  border-radius: 28px;
+  background: transparent;
+  border: 2px solid #37613c;
+  font-family: "Gotham" sans-serif;
+  font-weight: normal;
+  font-size: 27px;
+  text-align: center;
+  padding: 15px;
+  @include breakpoint(small-only) {
+    font-size: 16px;
+  }
+}
+
+@mixin button-page-hover-2 {
+  background-color: $tertiary-color;
+  color: $secondary-color;
+  font-size: 27px;
+  transition: 0, 5s;
+  @include breakpoint(small-only) {
+    font-size: 16px;
+  }
+}

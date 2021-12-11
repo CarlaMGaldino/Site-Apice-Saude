@@ -1,0 +1,81 @@
+section.ouvidoria-page {
+  padding: 359px 0px 150px 0px;
+}
+
+h3.ouvidoria-page__conteudo-titulo {
+  font-family: "Gotham" sans-serif;
+  font-weight: 900;
+  font-size: 82px;
+  text-align: left;
+  color: #37613c;
+  color: #37613c;
+  text-transform: uppercase;
+}
+
+@media (max-width: 74.9375em) {
+  h3.ouvidoria-page__conteudo-titulo {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 48em) {
+  h3.ouvidoria-page__conteudo-titulo {
+    font-size: 25px;
+  }
+}
+
+p.ouvidoria-page__conteudo-texto1 {
+  font-family: "Gotham" sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: left;
+  line-height: 40px;
+  font-weight: normal;
+  color: #37613c;
+}
+
+@media (max-width: 48em) {
+  p.ouvidoria-page__conteudo-texto1 {
+    font-size: 16px;
+  }
+}
+
+.ouvidoria-page__conteudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ouvidoria-page__conteudo-img img {
+  width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+  .ouvidoria-page__conteudo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  h3.ouvidoria-page__conteudo-titulo {
+    text-align: center;
+  }
+  p.ouvidoria-page__conteudo-texto1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.ouvidoria-page {
+    padding: 225px 0px 18px 0px;
+  }
+}
+/*# sourceMappingURL=ouvidoria.css.map */

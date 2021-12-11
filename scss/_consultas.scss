@@ -1,0 +1,16 @@
+@import "mixins";
+@import "breakpoint";
+
+#consultas-page-img {
+  margin-top: 5px;
+}
+
+div#page-consultas-servicos__1 {
+  margin-bottom: -80px;
+}
+
+@media screen and (max-width: 980px) {
+  div#page-consultas-servicos__1 {
+    margin-bottom: -37px;
+  }
+}

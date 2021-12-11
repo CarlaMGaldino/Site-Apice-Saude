@@ -1,0 +1,116 @@
+@import "mixins";
+@import "breakpoint";
+
+section.corpo-clinico {
+  padding: 300px 0px 55px 0px;
+}
+
+.corpo-clinico-clinico__conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.corpo-clinico__imagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.corpo-clinico__img {
+  width: 24%;
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+h3.corpo-clinico__titulo {
+  @include title-six;
+  color: $primary-color;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p.corpo-clinico__paragrafo1 {
+  @include paragraph-banner-three;
+  color: $primary-color;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2.corpo-clinico__img-titulo {
+  @include paragraph-banner-three;
+  color: $fourth-color;
+  text-transform: uppercase;
+  position: absolute;
+  top: 372px;
+  padding-left: 15px;
+}
+
+p.corpo-clinico__img-paragrafo {
+  @include paragraph-banner-three;
+  color: $primary-color;
+  margin-top: 15px;
+}
+
+.corpo-clinico__button {
+  margin-top: 30px;
+}
+
+a.corpo-clinico__link {
+  @include paragraph-span;
+  font-size: 21px;
+  color: $primary-color;
+  width: 142px;
+  height: 44px;
+  border-radius: 22px;
+  background: transparent;
+  border: 2px solid #37613c;
+  padding: 10px 20px;
+}
+.corpo-clinico__imagem img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .corpo-clinico__img {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section.corpo-clinico {
+    padding: 232px 0px 55px 0px;
+  }
+
+  .corpo-clinico__img {
+    width: 48%;
+  }
+  .corpo-clinico__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .corpo-clinico__imagem {
+    display: flex;
+    justify-content: center;
+  }
+  h2.corpo-clinico__img-titulo {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .corpo-clinico__img {
+    width: 100%;
+  }
+
+  .corpo-clinico__imagens {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

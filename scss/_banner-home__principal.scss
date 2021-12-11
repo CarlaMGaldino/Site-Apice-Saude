@@ -1,0 +1,77 @@
+@import "mixins";
+@import "breakpoint";
+
+section.banner-home {
+  background-image: url(/imagens/imagens-banner/banner-principal-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  padding: 120px 0px;
+}
+
+.banner-home__conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-home__conteudo-icone {
+  margin-top: -50px;
+  margin-left: 150px;
+}
+
+.banner-home__conteudo-box-home {
+  margin-top: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-home__conteudo-texto {
+  h1 {
+    @include title;
+    margin: 27px 0px 41px 0px;
+  }
+
+  & span {
+    @include title-three;
+    color: $primary-color;
+  }
+}
+
+.banner-home__conteudo-texto a {
+  @include button-page-1;
+  margin-top: 20px;
+}
+
+.banner-home__conteudo-texto a:hover {
+  @include button-page-hover-1;
+}
+
+.banner-home__conteudo-slide-top {
+  display: flex;
+  margin-top: 12%;
+  justify-content: space-around;
+  background-color: $primary-color;
+  padding: 24px 0px;
+  & p {
+    @include paragraph-text-2;
+    font-size: 17px;
+    text-align: center;
+  }
+}
+
+/*slick*/
+
+.banner-home__conteudo-slide-top.slick-initialized.slick-slider button {
+  display: none !important;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  margin-bottom: 0px !important;
+}
+
+@media screen and (max-width: 980px) {
+}

@@ -1,0 +1,93 @@
+@import "mixins";
+@import "breakpoint";
+
+section.codigo-etica {
+  padding: 350px 0px 100px 0px;
+}
+
+.codigo-etica__conteudo {
+  h3 {
+    @include title-three;
+    color: $primary-color;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+}
+
+.codigo-etica__lista li {
+  @include paragraph-span-2;
+  color: $primary-color;
+}
+
+.codigo-etica__box-principal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.codigo-etica__lista a {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  max-width: 633px;
+  min-width: 281px;
+  height: 63px;
+  border-radius: 10px;
+  background: #dce3dd;
+  border: 1px solid #37613c;
+  align-items: center;
+}
+
+.codigo-etica__img,
+.codigo-etica__conteudo-box {
+  width: 48%;
+}
+
+.codigo-etica__lista span img {
+  max-width: 35.29px;
+  height: 35.22px;
+  background: transparent;
+}
+
+.codigo-etica__img img {
+  max-width: 80%;
+}
+
+@media screen and (max-width: 990px) {
+  .codigo-etica__box-principal {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .codigo-etica__img,
+  .codigo-etica__conteudo-box {
+    width: 100%;
+  }
+
+  .codigo-etica__conteudo h3 {
+    text-align: center;
+  }
+  .codigo-etica__lista ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  section.codigo-etica {
+    padding: 249px 0px 50px 0px;
+  }
+  .codigo-etica__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .codigo-etica__img img {
+    width: 50%;
+  }
+  .codigo-etica__lista a {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
