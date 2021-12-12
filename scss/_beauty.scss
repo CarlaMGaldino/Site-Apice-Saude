@@ -49,9 +49,12 @@ p.beauty-conteudo__paragrafo1 {
   margin-bottom: 25px;
 }
 
-section.slide {
+section.beauty-slide {
   padding: 100px 0px;
   background-color: $primary-color;
+  @include breakpoint(small-only) {
+    padding: 30px 0;
+  }
 }
 
 @media screen and (max-width: 1000px) {

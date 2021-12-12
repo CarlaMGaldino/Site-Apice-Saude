@@ -72,18 +72,47 @@ $(".banner-home__conteudo-slide-top").slick({
   ],
 });
 
-$(".hospital-conteudo__home-slide-itens").slick({
+$(".slider-for").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false,
   fade: true,
-  asNavFor: "hospital-conteudo__home-slide-g",
+  asNavFor: ".slider-nav",
 });
-$(".hospital-conteudo__home-slide-g").slick({
-  slidesToShow: 3,
+$(".slider-nav").slick({
+  slidesToShow: 8,
   slidesToScroll: 1,
-  asNavFor: ".hospital-conteudo__home-slide-itens",
-  dots: true,
-  centerMode: true,
+  arrows: false,
+  asNavFor: ".slider-for",
+  dots: false,
+  centerMode: false,
   focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 3,
+        arrows: false,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+      },
+    },
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ],
 });

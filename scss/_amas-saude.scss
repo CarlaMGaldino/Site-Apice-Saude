@@ -7,12 +7,16 @@ section.amas-saude__banner {
 
 .amas-saude__banner-conteudo {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
-.amas-saude__banner-box-texto,
-.amas-saude__banner-box-img {
+.amas-saude__banner-box-texto {
   width: 48%;
+}
+
+.amas-saude__banner-box-img {
+  width: 50%;
+  display: flex;
 }
 
 h3.amas-saude__banner-box-titulo1 {
@@ -40,7 +44,7 @@ p.amas-saude__banner-paragrafo5 {
 }
 
 .amas-saude__banner-box-img img {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 section.guia {

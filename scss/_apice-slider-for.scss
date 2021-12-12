@@ -1,0 +1,26 @@
+@import "mixins";
+@import "breakpoint";
+
+.apice-slider-for {
+  margin-bottom: 22px;
+}
+
+.apice-slider-for button.slick-next.slick-arrow,
+.apice-slider-for button.slick-prev.slick-arrow {
+  top: initial;
+  bottom: -174px;
+  transform: translateY(0px);
+  z-index: 1;
+  @include breakpoint(small-only) {
+    top: 50%;
+    bottom: initial;
+    transform: translateY(-50%);
+  }
+}
+
+ul.apice-slider-nav {
+  margin: 0 30px;
+  @include breakpoint(small-only) {
+    margin: 0;
+  }
+}
