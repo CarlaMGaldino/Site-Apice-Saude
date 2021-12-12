@@ -460,6 +460,10 @@ span.nossos-servicos__home-span {
 }
 
 /*Assistencias credenciadas*/
+.assistencias-home {
+  background-color: #f9f9f9;
+}
+
 li.assistencias-home__marca-logos img {
   width: 100%;
 }
