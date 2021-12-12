@@ -316,6 +316,18 @@ section.banner-home {
   margin-bottom: 36px;
 }
 
+@media (min-width: 75em) {
+  .banner-home__conteudo-slide-top {
+    margin-top: 5%;
+  }
+}
+
+@media (min-width: 100em) {
+  .banner-home__conteudo-slide-top {
+    margin-top: 12%;
+  }
+}
+
 .banner-home__conteudo-slide-top p {
   font-family: "Gotham" sans-serif;
   font-weight: bold;
@@ -1262,9 +1274,6 @@ button#slick-slide-control10 {
   .consulta-social__home-box1 a.consulta-social__home-link {
     padding: 6px;
   }
-  header .menu-nav__lista {
-    display: none !important;
-  }
   .hospital-conteudo__box-tabela {
     width: 100%;
   }
@@ -1571,6 +1580,35 @@ ul.menu-nav__lista-box2 {
   }
 }
 
+@media (max-width: 56.1875em) {
+  .menu-nav__lista-box1-item,
+  .menu-nav__lista-box2-item {
+    display: none;
+  }
+}
+
+.menu-nav__lista-box1-item a,
+.menu-nav__lista-box2-item a {
+  font-family: "Gotham" sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+  color: #37613c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 37em) {
+  .menu-nav__lista-box1-item a,
+  .menu-nav__lista-box2-item a {
+    font-size: 14px;
+  }
+}
+
 a.menu-nav__lista-box2-item__link {
   background-color: #37613c;
   padding: 17px;
@@ -1581,6 +1619,12 @@ a.menu-nav__lista-box2-item__link {
   line-height: 18px;
   text-align: center;
   color: #fff;
+}
+
+@media (max-width: 56.1875em) {
+  a.menu-nav__lista-box2-item__link {
+    display: none;
+  }
 }
 
 a.menu-nav__lista-box2-item__link2 {
@@ -1597,10 +1641,23 @@ a.menu-nav__lista-box2-item__link2 {
   color: #37613c;
 }
 
+@media (max-width: 48em) {
+  a.menu-nav__lista-box2-item__link2 {
+    font-size: 12px;
+    padding: 10px 10px;
+  }
+}
+
 .fas.fa-search {
   font-size: 22px;
   color: #37613c;
   margin-right: 8px;
+}
+
+@media (max-width: 48em) {
+  .fas.fa-search {
+    font-size: 12px;
+  }
 }
 
 .menu-nav__lista {

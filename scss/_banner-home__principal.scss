@@ -61,6 +61,12 @@ section.banner-home {
   background-color: $primary-color;
   padding: 24px 0px;
   margin-bottom: 36px;
+  @include breakpoint(large-up) {
+    margin-top: 5%;
+  }
+  @include breakpoint(super-large-up) {
+    margin-top: 12%;
+  }
   & p {
     @include paragraph-text-2;
     font-size: 17px;
