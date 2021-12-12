@@ -54,6 +54,17 @@ ul.menu-nav__lista-box2 {
   color: $primary-color;
   display: flex;
   align-items: center;
+  @include breakpoint(medium-only) {
+    display: none;
+  }
+}
+
+.menu-nav__lista-box1-item a,
+.menu-nav__lista-box2-item a {
+  @include paragraph-text2;
+  color: $primary-color;
+  display: flex;
+  align-items: center;
 }
 
 a.menu-nav__lista-box2-item__link {
@@ -66,6 +77,9 @@ a.menu-nav__lista-box2-item__link {
   line-height: 18px;
   text-align: center;
   color: #fff;
+  @include breakpoint(medium-only) {
+    display: none;
+  }
 }
 
 a.menu-nav__lista-box2-item__link2 {
@@ -80,12 +94,19 @@ a.menu-nav__lista-box2-item__link2 {
   font-size: 17px;
   padding: 10px 10px 14px;
   color: #37613c;
+  @include breakpoint(small-only) {
+    font-size: 12px;
+    padding: 10px 10px;
+  }
 }
 
 .fas.fa-search {
   font-size: 22px;
   color: #37613c;
   margin-right: 8px;
+  @include breakpoint(small-only) {
+    font-size: 12px;
+  }
 }
 
 .menu-nav__lista {
