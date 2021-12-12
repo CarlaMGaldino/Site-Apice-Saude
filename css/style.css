@@ -355,6 +355,7 @@ section.banner-home {
   background-size: cover;
   background-position: center;
   height: auto;
+  padding: 72px 0 46px 0;
 }
 
 .hospital-conteudo__box {
@@ -1385,6 +1386,10 @@ button#slick-slide-control10 {
   }
 }
 
+.hospital-conteudo.home2 {
+  margin-top: -37px;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1510,6 +1515,10 @@ header.menu-nav {
 
 .menu-nav__logo {
   width: 25%;
+}
+
+.menu-nav__logo img {
+  width: 100%;
 }
 
 ul.menu-nav__lista-box1,
@@ -2182,17 +2191,23 @@ section.amas-saude__banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.amas-saude__banner-box-texto,
-.amas-saude__banner-box-img {
+.amas-saude__banner-box-texto {
   width: 48%;
+}
+
+.amas-saude__banner-box-img {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 h3.amas-saude__banner-box-titulo1 {
@@ -2259,7 +2274,7 @@ p.amas-saude__banner-paragrafo5 {
 }
 
 .amas-saude__banner-box-img img {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 section.guia {
@@ -3470,9 +3485,23 @@ li.perguntas-frequentes__lista-li {
 
 section.odontologia {
   background-image: url(/imagens/imagens-site/odonto-min.jpg);
-  background-position: right;
+  background-position: 137% 100%;
+  background-size: 73%;
   background-repeat: no-repeat;
-  padding: 142px 0px 0px 0px;
+  padding: 168px 0px 0px 0px;
+  height: 100vh;
+}
+
+@media (max-width: 74.9375em) {
+  section.odontologia {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 48em) {
+  section.odontologia {
+    height: 100vh;
+  }
 }
 
 .odontologia-img {
@@ -3489,6 +3518,13 @@ section.odontologia {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 120px;
+}
+
+@media (max-width: 48em) {
+  .odontologia-conteudo {
+    margin-top: 60px;
+  }
 }
 
 .odontologia-texto,
@@ -3609,9 +3645,11 @@ li.odotonlogia-texto__lista-li_2 {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   .odontologia-img {
     display: block;
+    position: absolute;
+    bottom: 0;
   }
   .odontologia-texto,
   .odontologia-img {
@@ -3620,6 +3658,8 @@ li.odotonlogia-texto__lista-li_2 {
   section.odontologia {
     background-blend-mode: lighten;
     background-color: #fff;
+    position: relative;
+    height: 690px;
   }
   .odontologia-img {
     display: -webkit-box;
@@ -3652,6 +3692,12 @@ li.odotonlogia-texto__lista-li_2 {
 section.odontologia-slide {
   padding: 100px 0px;
   background-color: #37613c;
+}
+
+@media (max-width: 48em) {
+  section.odontologia-slide {
+    padding: 30px 0px;
+  }
 }
 
 section.beauty {
@@ -3764,9 +3810,15 @@ p.beauty-conteudo__paragrafo1 {
   }
 }
 
-section.slide {
+section.beauty-slide {
   padding: 100px 0px;
   background-color: #37613c;
+}
+
+@media (max-width: 48em) {
+  section.beauty-slide {
+    padding: 30px 0;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -4071,6 +4123,39 @@ div#terapias-banner1__img {
   }
   div#terapia-page__conteudo h4.terapias-conteudo__titulo {
     margin-bottom: 24px;
+  }
+}
+
+.apice-slider-for {
+  margin-bottom: 22px;
+}
+
+.apice-slider-for button.slick-next.slick-arrow,
+.apice-slider-for button.slick-prev.slick-arrow {
+  top: initial;
+  bottom: -174px;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  z-index: 1;
+}
+
+@media (max-width: 48em) {
+  .apice-slider-for button.slick-next.slick-arrow,
+  .apice-slider-for button.slick-prev.slick-arrow {
+    top: 50%;
+    bottom: initial;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+ul.apice-slider-nav {
+  margin: 0 30px;
+}
+
+@media (max-width: 48em) {
+  ul.apice-slider-nav {
+    margin: 0;
   }
 }
 

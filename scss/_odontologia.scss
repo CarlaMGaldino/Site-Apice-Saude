@@ -3,9 +3,17 @@
 
 section.odontologia {
   background-image: url(/imagens/imagens-site/odonto-min.jpg);
-  background-position: right;
+  background-position: 137% 100%;
+  background-size: 73%;
   background-repeat: no-repeat;
-  padding: 142px 0px 0px 0px;
+  padding: 168px 0px 0px 0px;
+  height: 100vh;
+  @include breakpoint(large-only) {
+    height: 80vh;
+  }
+  @include breakpoint(small-only) {
+    height: 100vh;
+  }
 }
 
 .odontologia-img {
@@ -16,6 +24,10 @@ section.odontologia {
   display: flex;
   justify-content: left;
   align-items: center;
+  margin-top: 120px;
+  @include breakpoint(small-only) {
+    margin-top: 60px;
+  }
 }
 
 .odontologia-texto,
@@ -57,9 +69,11 @@ li.odotonlogia-texto__lista-li_2 {
   margin-top: 30px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   .odontologia-img {
     display: block;
+    position: absolute;
+    bottom: 0;
   }
 
   .odontologia-texto,
@@ -70,6 +84,8 @@ li.odotonlogia-texto__lista-li_2 {
   section.odontologia {
     background-blend-mode: lighten;
     background-color: #fff;
+    position: relative;
+    height: 690px;
   }
 
   .odontologia-img {
@@ -95,4 +111,7 @@ li.odotonlogia-texto__lista-li_2 {
 section.odontologia-slide {
   padding: 100px 0px;
   background-color: $primary-color;
+  @include breakpoint(small-only) {
+    padding: 30px 0px;
+  }
 }
