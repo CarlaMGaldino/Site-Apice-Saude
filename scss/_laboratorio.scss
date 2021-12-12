@@ -2,7 +2,7 @@
 @import "breakpoint";
 
 section.laboratorio {
-  padding: 300px 0px 0px 0px;
+  padding: 35px 0px 0px 0px;
 }
 
 .laboratorio-conteudo {
@@ -21,7 +21,7 @@ p.laboratorio-paragrafo1 {
   @include paragraph-span-2;
   font-weight: bold;
   color: $primary-color;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-top: 30px;
 }
 
@@ -34,6 +34,9 @@ p.laboratorio-paragrafo2 {
 li.laboratorio-lista {
   @include paragraph-span-2;
   color: $primary-color;
+  @include breakpoint(super-small-only) {
+    font-size: 15px;
+  }
 }
 
 .laboratorio-texto,
@@ -58,16 +61,17 @@ li.laboratorio-lista {
 
   .laboratorio-img {
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    margin-top: -167px;
   }
 
   .laboratorio-img img {
-    width: 50%;
+    width: 35%;
   }
 }
 
 @media screen and (max-width: 768px) {
   section.laboratorio {
-    padding: 237px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
   }
 }

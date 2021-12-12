@@ -2,19 +2,23 @@
 @import "breakpoint";
 
 section.ouvidoria-page {
-  padding: 359px 0px 150px 0px;
+  padding: 30px 0px;
 }
 
 h3.ouvidoria-page__conteudo-titulo {
   @include title-three;
   color: $primary-color;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 p.ouvidoria-page__conteudo-texto1 {
   @include paragraph-banner;
   line-height: 40px;
   font-weight: normal;
   color: $primary-color;
+  @include breakpoint(small-only) {
+    line-height: 23px;
+  }
 }
 
 .ouvidoria-page__conteudo {
@@ -40,18 +44,23 @@ p.ouvidoria-page__conteudo-texto1 {
 
   h3.ouvidoria-page__conteudo-titulo {
     text-align: center;
+    margin-bottom: 15px;
   }
 
   p.ouvidoria-page__conteudo-texto1 {
     text-align: center;
   }
   .ouvidoria-page__conteudo-img img {
-    width: 80%;
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 768px) {
   section.ouvidoria-page {
-    padding: 225px 0px 18px 0px;
+    padding: 18px 0px 18px 0px;
+    margin-top: -40px;
+  }
+  .ouvidoria-page__conteudo-img {
+    margin-bottom: 15px;
   }
 }

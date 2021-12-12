@@ -949,9 +949,10 @@ section.mapa-home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 50px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -963,7 +964,7 @@ section.mapa-home {
 }
 
 .mapa-home__box_img-frame2 iframe {
-  width: 80%;
+  width: 96%;
 }
 
 .mapa-home__box_img-frame2 {
@@ -1015,13 +1016,18 @@ button#slick-slide-control10 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 5px 0px;
+    margin: 10px 0px 30px 0px;
   }
   .mapa-home__box-conteudo {
     width: 100%;
     text-align: center;
+    margin-bottom: -17px;
   }
   .mapa-home__box_img-frame2 {
     width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
   }
   .mapa-home__box-conteudo h4 {
     text-align: center !important;
@@ -1029,9 +1035,6 @@ button#slick-slide-control10 {
   .mapa-home__box-conteudo p,
   .mapa-home__box-conteudo span {
     text-align: center;
-  }
-  .mapa-home__box_img {
-    padding: 5px 0px;
   }
   .mapa-home__titulo h3 {
     width: 85%;
@@ -1572,7 +1575,7 @@ footer.menu-nav__footer {
 }
 
 section.ouvidoria-page {
-  padding: 359px 0px 150px 0px;
+  padding: 30px 0px;
 }
 
 h3.ouvidoria-page__conteudo-titulo {
@@ -1583,6 +1586,7 @@ h3.ouvidoria-page__conteudo-titulo {
   color: #37613c;
   color: #37613c;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 74.9375em) {
@@ -1610,6 +1614,12 @@ p.ouvidoria-page__conteudo-texto1 {
 @media (max-width: 48em) {
   p.ouvidoria-page__conteudo-texto1 {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 48em) {
+  p.ouvidoria-page__conteudo-texto1 {
+    line-height: 23px;
   }
 }
 
@@ -1653,23 +1663,34 @@ p.ouvidoria-page__conteudo-texto1 {
   }
   h3.ouvidoria-page__conteudo-titulo {
     text-align: center;
+    margin-bottom: 15px;
   }
   p.ouvidoria-page__conteudo-texto1 {
     text-align: center;
   }
   .ouvidoria-page__conteudo-img img {
-    width: 80%;
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 768px) {
   section.ouvidoria-page {
-    padding: 225px 0px 18px 0px;
+    padding: 18px 0px 18px 0px;
+    margin-top: -40px;
+  }
+  .ouvidoria-page__conteudo-img {
+    margin-bottom: 15px;
   }
 }
 
 section.historia-banner {
-  padding: 350px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
+}
+
+@media (max-width: 48em) {
+  section.historia-banner {
+    padding: 10px 0px 0px 0px;
+  }
 }
 
 .historia-banner__conteudo {
@@ -1746,6 +1767,12 @@ section.historia-banner {
   .historia-banner__conteudo-texto p {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+@media (max-width: 48em) {
+  .historia-banner__conteudo-texto p {
+    margin-bottom: 20px;
   }
 }
 
@@ -1854,11 +1881,8 @@ ul.historia-conteudo__lista {
   .histoaria-banner__conteudo-img img {
     width: 65%;
   }
-  section.historia-banner {
-    padding: 225px 0px 0px 0px;
-  }
   section.historia-conteudo__box {
-    padding: 50px 0px;
+    padding: 30px 0px;
   }
   .historia-banner__conteudo-texto h3 {
     margin-bottom: -20px;
@@ -1899,7 +1923,7 @@ ul.historia-conteudo__lista {
     margin-top: 11px;
   }
   .historia-conteudo__box-texto p {
-    margin-top: -14px;
+    margin-top: -3px;
   }
 }
 
@@ -2270,7 +2294,13 @@ p.guia-beneficiario__paragrafo4 {
 }
 
 section.unidades {
-  padding: 250px 0px 100px 0px;
+  padding: 50px 0px 30px 0px;
+}
+
+@media (max-width: 48em) {
+  section.unidades {
+    padding: 10px 0px 30px 0px;
+  }
 }
 
 .unidades-conteudo {
@@ -2337,9 +2367,6 @@ h3.unidades-conteudo__titulo {
   }
   .unidades-conteudo-img img {
     max-width: 60%;
-  }
-  section.unidades {
-    padding: 189px 0px 30px 0px;
   }
   .unidades-conteudo-img {
     display: -webkit-box;
@@ -2461,7 +2488,13 @@ p.consulta-social__paragrafo3 {
 }
 
 section.corpo-clinico {
-  padding: 300px 0px 55px 0px;
+  padding: 30px 0px 55px 0px;
+}
+
+@media (max-width: 48em) {
+  section.corpo-clinico {
+    padding: 10px 0px 55px 0px;
+  }
 }
 
 .corpo-clinico-clinico__conteudo {
@@ -2576,6 +2609,12 @@ p.corpo-clinico__img-paragrafo {
   margin-top: 30px;
 }
 
+@media (max-width: 48em) {
+  .corpo-clinico__button {
+    margin-top: 1px;
+  }
+}
+
 a.corpo-clinico__link {
   font-family: "Gotham" sans-serif;
   font-weight: 500;
@@ -2611,9 +2650,6 @@ a.corpo-clinico__link {
 }
 
 @media screen and (max-width: 1000px) {
-  section.corpo-clinico {
-    padding: 232px 0px 55px 0px;
-  }
   .corpo-clinico__img {
     width: 48%;
   }
@@ -2704,7 +2740,7 @@ section#cirurgia-procedimento__texto p.terapias-conteudo__paragrafo1 {
   }
 }
 
-@media screen and (max-width: 980) {
+@media screen and (max-width: 980px) {
   section#cirurgia-procedimento__texto .terapias-conteudo__img img {
     margin-top: -80px;
     width: 90%;
@@ -2717,10 +2753,13 @@ section#cirurgia-procedimento__texto p.terapias-conteudo__paragrafo1 {
     margin-top: -107px;
     width: 100%;
   }
+  img#cirurgia-img__banner {
+    margin-top: 30px !important;
+  }
 }
 
-section.nossos-servicos__page {
-  padding: 300px 0px 100px 0px;
+#exames-banner__img {
+  margin-top: 48px;
 }
 
 .nossos-servicos__box2 {
@@ -2732,6 +2771,28 @@ section.nossos-servicos__page {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+section#exames-section__banner1 {
+  padding: 30px 0px 30px 0px;
+}
+
+@media (max-width: 48em) {
+  section#exames-section__banner1 {
+    margin-bottom: 20px;
+    padding-top: 10px;
+  }
+}
+
+section#exames-page #exames-banner__img {
+  margin-top: 70px;
+  width: 90%;
+}
+
+@media (max-width: 48em) {
+  section#exames-page #exames-banner__img {
+    margin-top: 40px;
+  }
 }
 
 section#exames-page {
@@ -2941,15 +3002,8 @@ p.terapias-conteudo__paragrafo2 {
         -ms-flex-align: center;
             align-items: center;
   }
-  section#exames-page .terapias-conteudo__img img {
-    margin-top: -76px;
-    width: 90%;
-  }
   .nossos-servicos__box1 {
     margin-bottom: 50px;
-  }
-  section.nossos-servicos__page {
-    padding: 210px 0px 47px 0px;
   }
   section#exames-page .terapias-conteudo__texto {
     margin-top: 36px;
@@ -2971,7 +3025,7 @@ div#page-consultas-servicos__1 {
 }
 
 section.laboratorio {
-  padding: 300px 0px 0px 0px;
+  padding: 35px 0px 0px 0px;
 }
 
 .laboratorio-conteudo {
@@ -3015,7 +3069,7 @@ p.laboratorio-paragrafo1 {
   line-height: 35px;
   font-weight: bold;
   color: #37613c;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-top: 30px;
 }
 
@@ -3075,6 +3129,12 @@ li.laboratorio-lista {
   }
 }
 
+@media (max-width: 37em) {
+  li.laboratorio-lista {
+    font-size: 15px;
+  }
+}
+
 .laboratorio-texto,
 .laboratorio-img {
   width: 48%;
@@ -3105,18 +3165,19 @@ li.laboratorio-lista {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    margin-top: -167px;
   }
   .laboratorio-img img {
-    width: 50%;
+    width: 35%;
   }
 }
 
 @media screen and (max-width: 768px) {
   section.laboratorio {
-    padding: 237px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
   }
 }
 
@@ -3630,7 +3691,7 @@ section.slide {
 }
 
 section.nossos-servicos__page {
-  padding: 300px 0px 420px 0px;
+  padding: 30px 0px 420px 0px;
 }
 
 .nossos-servicos__imagem-conteudo {
@@ -3886,7 +3947,7 @@ div#terapias-banner1__img {
             align-items: center;
   }
   section.nossos-servicos__page {
-    padding: 252px 0px 122px 0px;
+    padding: 10px 0px 122px 0px;
   }
   div#terapias-banner1__img .nossos-servicos__imagem-img img {
     width: 75%;
@@ -3921,16 +3982,9 @@ body {
 }
 
 .container {
-  max-width: 1340px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 0px 10px !important;
-}
-
-@media (min-width: 100em) {
-  .container {
-    max-width: 1500px;
-    padding: 0px 10px !important;
-  }
 }
 
 @media (max-width: 74.9375em) {

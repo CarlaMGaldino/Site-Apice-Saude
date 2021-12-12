@@ -24,7 +24,7 @@ section#cirurgia-procedimento__texto p.terapias-conteudo__paragrafo1 {
   margin-top: 30px;
 }
 
-@media screen and (max-width: 980) {
+@media screen and (max-width: 980px) {
   section#cirurgia-procedimento__texto .terapias-conteudo__img img {
     margin-top: -80px;
     width: 90%;
@@ -37,5 +37,8 @@ section#cirurgia-procedimento__texto p.terapias-conteudo__paragrafo1 {
   img#image-cirurgia {
     margin-top: -107px;
     width: 100%;
+  }
+  img#cirurgia-img__banner {
+    margin-top: 30px !important;
   }
 }

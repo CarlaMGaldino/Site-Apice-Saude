@@ -385,8 +385,8 @@ section.mapa-home {
 
 .mapa-home__box_img {
   display: flex;
-  justify-content: space-around;
-  padding: 50px 0px;
+  justify-content: space-between;
+  padding: 30px 0px;
   align-items: center;
 }
 
@@ -394,8 +394,9 @@ section.mapa-home {
   width: 45%;
   margin-top: 50px;
 }
+
 .mapa-home__box_img-frame2 iframe {
-  width: 80%;
+  width: 96%;
 }
 
 .mapa-home__box_img-frame2 {
@@ -425,24 +426,26 @@ button#slick-slide-control10 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5px 0px;
+    margin: 10px 0px 30px 0px;
   }
   .mapa-home__box-conteudo {
     width: 100%;
     text-align: center;
+    margin-bottom: -17px;
   }
   .mapa-home__box_img-frame2 {
     width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
   }
+
   .mapa-home__box-conteudo h4 {
     text-align: center !important;
   }
   .mapa-home__box-conteudo p,
   .mapa-home__box-conteudo span {
     text-align: center;
-  }
-
-  .mapa-home__box_img {
-    padding: 5px 0px;
   }
 
   .mapa-home__titulo h3 {

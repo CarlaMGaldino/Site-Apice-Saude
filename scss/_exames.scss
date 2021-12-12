@@ -1,14 +1,30 @@
 @import "mixins";
 @import "breakpoint";
 
-section.nossos-servicos__page {
-  padding: 300px 0px 100px 0px;
+#exames-banner__img {
+  margin-top: 48px;
 }
 
 .nossos-servicos__box2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+section#exames-section__banner1 {
+  padding: 30px 0px 30px 0px;
+  @include breakpoint(small-only) {
+    margin-bottom: 20px;
+    padding-top: 10px;
+  }
+}
+
+section#exames-page #exames-banner__img {
+  margin-top: 70px;
+  width: 90%;
+  @include breakpoint(small-only) {
+    margin-top: 40px;
+  }
 }
 
 section#exames-page {
@@ -127,16 +143,8 @@ p.terapias-conteudo__paragrafo2 {
     align-items: center;
   }
 
-  section#exames-page .terapias-conteudo__img img {
-    margin-top: -76px;
-    width: 90%;
-  }
   .nossos-servicos__box1 {
     margin-bottom: 50px;
-  }
-
-  section.nossos-servicos__page {
-    padding: 210px 0px 47px 0px;
   }
 
   section#exames-page .terapias-conteudo__texto {
