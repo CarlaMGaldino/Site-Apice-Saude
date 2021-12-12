@@ -7,10 +7,7 @@
 
 div#page-consultas-servicos__1 {
   margin-bottom: -80px;
-}
-
-@media screen and (max-width: 980px) {
-  div#page-consultas-servicos__1 {
-    margin-bottom: -37px;
+  @include breakpoint(small-only) {
+    margin-bottom: -7px;
   }
 }

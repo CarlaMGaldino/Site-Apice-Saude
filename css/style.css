@@ -193,7 +193,13 @@ section.banner-home {
   background-size: cover;
   height: 100vh;
   width: 100%;
-  padding: 120px 0px;
+  position: relative;
+}
+
+.banner-home__box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .banner-home__conteudo {
@@ -215,7 +221,6 @@ section.banner-home {
 }
 
 .banner-home__conteudo-box-home {
-  margin-top: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,6 +313,7 @@ section.banner-home {
       justify-content: space-around;
   background-color: #37613c;
   padding: 24px 0px;
+  margin-bottom: 36px;
 }
 
 .banner-home__conteudo-slide-top p {
@@ -323,6 +329,13 @@ section.banner-home {
 @media (max-width: 37em) {
   .banner-home__conteudo-slide-top p {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 48em) {
+  .banner-home__conteudo-slide-top {
+    padding: 12px 0px;
+    margin-bottom: 18px;
   }
 }
 
@@ -362,6 +375,12 @@ section.banner-home {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
+}
+
+@media (max-width: 74.9375em) {
+  .hospital-conteudo__box-tabela {
+    width: 100%;
+  }
 }
 
 .hospital-conteudo__box2 h2 {
@@ -404,12 +423,12 @@ p.hospital-conteudo__box1-color1 {
   font-size: 20px;
   text-align: center;
   line-height: 25px;
-  width: 331px;
+  width: 100%;
   height: 94px;
   border-radius: 15px;
   background: #b6d8b9;
   border: 2px solid #fff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,6 +446,19 @@ p.hospital-conteudo__box1-color1 {
   }
 }
 
+@media (max-width: 74.9375em) {
+  .hospital-conteudo__box2_lista p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 37em) {
+  .hospital-conteudo__box2_lista p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+
 .hospital-conteudo__box2_lista {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -441,6 +473,23 @@ p.hospital-conteudo__box1-color1 {
 .hospital-conteudo__box1_lista-1 {
   position: relative;
   z-index: 10;
+  width: 47%;
+  padding: 0 10px;
+  -webkit-box-flex: 100px;
+      -ms-flex: 100px 1 1;
+          flex: 100px 1 1;
+}
+
+@media (max-width: 48em) {
+  .hospital-conteudo__box1_lista-1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 37em) {
+  .hospital-conteudo__box1_lista-1 {
+    padding: 0 5px;
+  }
 }
 
 .hospital-conteudo__box1_lista-1:before {
@@ -495,7 +544,7 @@ p.hospital-conteudo__box1-color1 {
   text-align: left;
   line-height: 35px;
   color: #fff;
-  margin: 36px 0px 48px 0px;
+  margin: 0px 0px 48px 0px;
   text-transform: uppercase;
 }
 
@@ -522,26 +571,67 @@ p.hospital-conteudo__box1-color1 {
 
 .hospital-conteudo__box1 {
   width: 100%;
+  position: relative;
+}
+
+@media (max-width: 74.9375em) {
+  .hospital-conteudo__box1 {
+    display: none;
+  }
 }
 
 .hospital-conteudo__box1 img {
   width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.hospital-conteudo__box1_link-button {
+  margin-bottom: 77px;
+}
+
+@media (max-width: 48em) {
+  .hospital-conteudo__box1_link-button {
+    margin-bottom: 30px;
+  }
 }
 
 /*Slick*/
 button.slick-next.slick-arrow {
   position: absolute;
   right: 0;
-  width: 73px;
   width: 28px;
   height: 151px;
-  background: transparent;
   border: 1px solid #cfcfcf;
-  top: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75.994' height='125.225' viewBox='0 0 75.994 125.225'%3E%3Cpath id='chevron-right-solid' d='M101.473,105.136l-55.73,55.73a6.882,6.882,0,0,1-9.733,0l-6.5-6.5a6.882,6.882,0,0,1-.011-9.721l44.167-44.375L29.5,55.895a6.882,6.882,0,0,1,.011-9.721l6.5-6.5a6.882,6.882,0,0,1,9.733,0l55.73,55.73A6.882,6.882,0,0,1,101.473,105.136Z' transform='translate(-27.494 -37.658)' fill='%23fff'/%3E%3C/svg%3E%0A");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  cursor: pointer;
 }
 
 button.slick-prev.slick-arrow {
-  display: none !important;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  width: 28px;
+  height: 151px;
+  border: 1px solid #cfcfcf;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translate(-100%, -50%);
+  font-size: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75.994' height='125.225' viewBox='0 0 75.994 125.225'%3E%3Cpath id='chevron-right-solid' d='M101.473,105.136l-55.73,55.73a6.882,6.882,0,0,1-9.733,0l-6.5-6.5a6.882,6.882,0,0,1-.011-9.721l44.167-44.375L29.5,55.895a6.882,6.882,0,0,1,.011-9.721l6.5-6.5a6.882,6.882,0,0,1,9.733,0l55.73,55.73A6.882,6.882,0,0,1,101.473,105.136Z' transform='translate(103.488 162.883) rotate(180)' fill='%23fff'/%3E%3C/svg%3E%0A");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  cursor: pointer;
 }
 
 .slick-slider .slick-track,
@@ -713,6 +803,10 @@ section.nossos-servicos {
 
 img.nossos-servicos__home-li {
   width: 100%;
+}
+
+span.nossos-servicos__home-span {
+  margin-bottom: 20px;
 }
 
 /*Assistencias credenciadas*/
@@ -949,10 +1043,9 @@ section.mapa-home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 30px 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -964,7 +1057,7 @@ section.mapa-home {
 }
 
 .mapa-home__box_img-frame2 iframe {
-  width: 96%;
+  width: 80%;
 }
 
 .mapa-home__box_img-frame2 {
@@ -1016,18 +1109,13 @@ button#slick-slide-control10 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 5px 0px;
-    margin: 10px 0px 30px 0px;
   }
   .mapa-home__box-conteudo {
     width: 100%;
     text-align: center;
-    margin-bottom: -17px;
   }
   .mapa-home__box_img-frame2 {
     width: 100%;
-    height: 250px;
-    margin-bottom: 10px;
   }
   .mapa-home__box-conteudo h4 {
     text-align: center !important;
@@ -1035,6 +1123,9 @@ button#slick-slide-control10 {
   .mapa-home__box-conteudo p,
   .mapa-home__box-conteudo span {
     text-align: center;
+  }
+  .mapa-home__box_img {
+    padding: 5px 0px;
   }
   .mapa-home__titulo h3 {
     width: 85%;
@@ -1218,9 +1309,7 @@ button#slick-slide-control10 {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 50px;
-  }
-  .nossos-servicos__home-img ul li {
-    width: 100%;
+    width: 75%;
   }
   .consulta-social__home-box1,
   p.consulta-social__home-texto2 {
@@ -1239,26 +1328,8 @@ button#slick-slide-control10 {
     right: -28px;
   }
   .hospital-conteudo__box2_lista p {
-    width: 289px;
+    width: 100%;
     height: 89px;
-  }
-  .hospital-conteudo__box1 {
-    margin-top: 30px;
-    max-width: 88%;
-    margin-bottom: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  section.banner-home {
-    height: auto;
-    padding: 150px 0px 20px 0px;
   }
   .consulta-social__home-box1 p.consulta-social__home-texto2 {
     line-height: 26px;
@@ -1268,14 +1339,39 @@ button#slick-slide-control10 {
     width: 100%;
   }
   button.slick-next.slick-arrow {
-    position: initial;
+    position: absolute;
     right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
     width: 40px;
-    height: 38px;
-    background: #fff;
-    border: 1px solid #cfcfcf;
+    height: 100%;
+    background: transparent;
+    border: none;
     border-radius: 5px;
     font-family: "Gotham";
+    font-size: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75.994' height='125.225' viewBox='0 0 75.994 125.225'%3E%3Cpath id='chevron-right-solid' d='M101.473,105.136l-55.73,55.73a6.882,6.882,0,0,1-9.733,0l-6.5-6.5a6.882,6.882,0,0,1-.011-9.721l44.167-44.375L29.5,55.895a6.882,6.882,0,0,1,.011-9.721l6.5-6.5a6.882,6.882,0,0,1,9.733,0l55.73,55.73A6.882,6.882,0,0,1,101.473,105.136Z' transform='translate(-27.494 -37.658)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+  }
+  button.slick-prev.slick-arrow {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 1;
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75.994' height='125.225' viewBox='0 0 75.994 125.225'%3E%3Cpath id='chevron-right-solid' d='M101.473,105.136l-55.73,55.73a6.882,6.882,0,0,1-9.733,0l-6.5-6.5a6.882,6.882,0,0,1-.011-9.721l44.167-44.375L29.5,55.895a6.882,6.882,0,0,1,.011-9.721l6.5-6.5a6.882,6.882,0,0,1,9.733,0l55.73,55.73A6.882,6.882,0,0,1,101.473,105.136Z' transform='translate(103.488 162.883) rotate(180)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
   }
   .nossos-servicos__home-img span {
     position: initial;
@@ -1383,9 +1479,11 @@ button#slick-slide-control10 {
 }
 
 header.menu-nav {
-  padding: 25px 0px;
+  padding: 25px 0 0 0;
   background: transparent;
   width: 100%;
+  position: absolute;
+  z-index: 999;
 }
 
 .menu-nav__box {
@@ -2383,7 +2481,7 @@ h3.unidades-conteudo__titulo {
 }
 
 section.consulta-social {
-  padding: 270px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
 }
 
 .consulta-social__banner {
@@ -3018,9 +3116,9 @@ div#page-consultas-servicos__1 {
   margin-bottom: -80px;
 }
 
-@media screen and (max-width: 980px) {
+@media (max-width: 48em) {
   div#page-consultas-servicos__1 {
-    margin-bottom: -37px;
+    margin-bottom: -7px;
   }
 }
 
@@ -3557,7 +3655,13 @@ section.odontologia-slide {
 }
 
 section.beauty {
-  padding: 350px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
+}
+
+@media (max-width: 48em) {
+  section.beauty {
+    padding: 10px 0px 0px 0px;
+  }
 }
 
 .beauty-conteudo__texto,
@@ -3684,9 +3788,6 @@ section.slide {
   }
   .beauty-conteudo__img-imagem img {
     width: 57%;
-  }
-  section.beauty {
-    padding: 229px 0px 0px 0px;
   }
 }
 
