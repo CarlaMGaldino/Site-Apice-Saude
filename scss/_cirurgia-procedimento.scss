@@ -23,6 +23,13 @@ section#cirurgia-procedimento__texto p.terapias-conteudo__paragrafo1 {
   color: #fff;
   margin-top: 30px;
 }
+img#cirurgia-img__banner {
+  margin-top: -22px;
+}
+
+section#page-cirurgia__procedimento {
+  padding-bottom: 128px;
+}
 
 @media screen and (max-width: 980px) {
   section#cirurgia-procedimento__texto .terapias-conteudo__img img {
@@ -40,5 +47,20 @@ section#cirurgia-procedimento__texto p.terapias-conteudo__paragrafo1 {
   }
   img#cirurgia-img__banner {
     margin-top: 30px !important;
+  }
+
+  section#page-cirurgia__procedimento {
+    padding-bottom: 64px;
+  }
+
+  section#page-cirurgia__procedimento h4.terapias-conteudo__titulo {
+    margin-bottom: -9px;
+  }
+
+  section#page-cirurgia__procedimento h5.terapias-conteudo__titulo2,
+  section#page-cirurgia__procedimento h5.terapias-conteudo__titulo3,
+  section#page-cirurgia__procedimento h5.terapias-conteudo__titulo4 {
+    margin-top: -8px;
+    margin-bottom: -5px;
   }
 }

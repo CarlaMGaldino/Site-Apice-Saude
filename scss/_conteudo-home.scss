@@ -217,7 +217,6 @@ section.nossos-servicos {
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
-  margin-bottom: 60px;
   padding: 100px 0px;
 }
 
@@ -281,6 +280,10 @@ span.nossos-servicos__home-span {
 }
 
 /*Assistencias credenciadas*/
+
+.assistencias-home {
+  background-color: $fourth-color;
+}
 
 li.assistencias-home__marca-logos img {
   width: 100%;

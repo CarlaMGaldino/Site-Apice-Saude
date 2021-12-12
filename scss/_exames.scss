@@ -21,7 +21,7 @@ section#exames-section__banner1 {
 
 section#exames-page #exames-banner__img {
   margin-top: 70px;
-  width: 90%;
+  width: 100%;
   @include breakpoint(small-only) {
     margin-top: 40px;
   }
