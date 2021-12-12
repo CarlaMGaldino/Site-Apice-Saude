@@ -18,9 +18,6 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  @include breakpoint(large-only) {
-    width: 100%;
-  }
 }
 
 .hospital-conteudo__box2 h2 {
@@ -40,22 +37,15 @@ p.hospital-conteudo__box1-color1 {
 
 .hospital-conteudo__box2_lista p {
   @include paragraph-color3;
-  width: 100%;
+  width: 331px;
   height: 94px;
   border-radius: 15px;
   background: #b6d8b9;
   border: 2px solid #fff;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  @include breakpoint(large-only) {
-    font-size: 16px;
-  }
-  @include breakpoint(super-small-only) {
-    font-size: 12px;
-    line-height: 17px;
-  }
 }
 
 .hospital-conteudo__box2_lista {
@@ -67,15 +57,6 @@ p.hospital-conteudo__box1-color1 {
 .hospital-conteudo__box1_lista-1 {
   position: relative;
   z-index: 10;
-  width: 47%;
-  padding: 0 10px;
-  flex: 100px 1 1;
-  @include breakpoint(small-only) {
-    width: 100%;
-  }
-  @include breakpoint(super-small-only) {
-    padding: 0 5px;
-  }
 }
 
 .hospital-conteudo__box1_lista-1:before {
@@ -117,7 +98,7 @@ p.hospital-conteudo__box1-color1 {
 .hospital-conteudo__box3 h3 {
   @include sub-title;
   color: $fourth-color;
-  margin: 0px 0px 48px 0px;
+  margin: 36px 0px 48px 0px;
   text-transform: uppercase;
 }
 
@@ -136,35 +117,28 @@ p.hospital-conteudo__box1-color1 {
 
 .hospital-conteudo__box1 {
   width: 100%;
-  position: relative;
-  @include breakpoint(large-only) {
-    display: none;
-  }
 }
 
 .hospital-conteudo__box1 img {
   width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
-.hospital-conteudo__box1_link-button {
-  margin-bottom: 77px;
-  @include breakpoint(small-only) {
-    margin-bottom: 30px;
-  }
 }
 
 /*Slick*/
 
 button.slick-next.slick-arrow {
-  @include desktop-slick-next;
+  position: absolute;
+  right: 0;
+  width: 73px;
+  width: 28px;
+  height: 151px;
+  background: transparent;
+  border: 1px solid #cfcfcf;
+  top: 0px;
 }
 
 button.slick-prev.slick-arrow {
-  @include desktop-slick-prev;
+  display: none !important;
 }
-
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   margin-bottom: 30px;
@@ -273,10 +247,6 @@ section.nossos-servicos {
 
 img.nossos-servicos__home-li {
   width: 100%;
-}
-
-span.nossos-servicos__home-span {
-  margin-bottom: 20px;
 }
 
 /*Assistencias credenciadas*/
@@ -415,8 +385,8 @@ section.mapa-home {
 
 .mapa-home__box_img {
   display: flex;
-  justify-content: space-around;
-  padding: 50px 0px;
+  justify-content: space-between;
+  padding: 30px 0px;
   align-items: center;
 }
 
@@ -424,8 +394,9 @@ section.mapa-home {
   width: 45%;
   margin-top: 50px;
 }
+
 .mapa-home__box_img-frame2 iframe {
-  width: 80%;
+  width: 96%;
 }
 
 .mapa-home__box_img-frame2 {
@@ -455,24 +426,26 @@ button#slick-slide-control10 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5px 0px;
+    margin: 10px 0px 30px 0px;
   }
   .mapa-home__box-conteudo {
     width: 100%;
     text-align: center;
+    margin-bottom: -17px;
   }
   .mapa-home__box_img-frame2 {
     width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
   }
+
   .mapa-home__box-conteudo h4 {
     text-align: center !important;
   }
   .mapa-home__box-conteudo p,
   .mapa-home__box-conteudo span {
     text-align: center;
-  }
-
-  .mapa-home__box_img {
-    padding: 5px 0px;
   }
 
   .mapa-home__titulo h3 {
@@ -609,7 +582,10 @@ button#slick-slide-control10 {
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
-    width: 75%;
+  }
+
+  .nossos-servicos__home-img ul li {
+    width: 100%;
   }
 
   .consulta-social__home-box1,
@@ -629,8 +605,20 @@ button#slick-slide-control10 {
     right: -28px;
   }
   .hospital-conteudo__box2_lista p {
-    width: 100%;
+    width: 289px;
     height: 89px;
+  }
+  .hospital-conteudo__box1 {
+    margin-top: 30px;
+    max-width: 88%;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section.banner-home {
+    height: auto;
+    padding: 150px 0px 20px 0px;
   }
   .consulta-social__home-box1 p.consulta-social__home-texto2 {
     line-height: 26px;
@@ -641,11 +629,14 @@ button#slick-slide-control10 {
   }
 
   button.slick-next.slick-arrow {
-    @include mobile-slick-next;
-  }
-
-  button.slick-prev.slick-arrow {
-    @include mobile-slick-prev;
+    position: initial;
+    right: 0;
+    width: 40px;
+    height: 38px;
+    background: #fff;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    font-family: "Gotham";
   }
 
   .nossos-servicos__home-img span {

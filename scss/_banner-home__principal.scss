@@ -8,7 +8,13 @@ section.banner-home {
   background-size: cover;
   height: 100vh;
   width: 100%;
-  padding: 120px 0px;
+  position: relative;
+}
+
+.banner-home__box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .banner-home__conteudo {
@@ -23,7 +29,6 @@ section.banner-home {
 }
 
 .banner-home__conteudo-box-home {
-  margin-top: 35%;
   display: flex;
   justify-content: space-between;
 }
@@ -55,10 +60,15 @@ section.banner-home {
   justify-content: space-around;
   background-color: $primary-color;
   padding: 24px 0px;
+  margin-bottom: 36px;
   & p {
     @include paragraph-text-2;
     font-size: 17px;
     text-align: center;
+  }
+  @include breakpoint(small-only) {
+    padding: 12px 0px;
+    margin-bottom: 18px;
   }
 }
 
