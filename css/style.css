@@ -187,7 +187,7 @@ textarea {
 }
 
 section.banner-home {
-  background-image: url(/imagens/imagens-banner/banner-principal-min.jpg);
+  background-image: url(../imagens/imagens-banner/banner-principal-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -362,7 +362,7 @@ section.banner-home {
 }
 
 .hospital-conteudo {
-  background-image: url(/imagens/imagens-banner/banner-home-2-min.jpg);
+  background-image: url(../imagens/imagens-banner/banner-home-2-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -658,7 +658,7 @@ ul#slide-hospital {
 
 /*Resultados exames*/
 section.resultado-home {
-  background-image: url(/imagens/imagens-banner/banner-exame-home.jpg);
+  background-image: url(../imagens/imagens-banner/banner-exame-home.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -710,7 +710,7 @@ a.exames-home__link {
 }
 
 section.nossos-servicos {
-  background-image: url(/imagens/imagens-banner/banner-img-home4-min.png);
+  background-image: url(../imagens/imagens-banner/banner-img-home4-min.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -893,7 +893,7 @@ li.assistencias-home__marca-logos {
 
 /*Consulta social*/
 section.consulta-social__home {
-  background-image: url(/imagens/imagens-banner/img-banner-social-min.jpg);
+  background-image: url(../imagens/imagens-banner/img-banner-social-min.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -976,7 +976,7 @@ section.consulta-social__home {
 
 /*sessão mapa*/
 section.mapa-home {
-  background-image: url(/imagens/imagens-banner/section-banner-6home-min.png);
+  background-image: url(../imagens/imagens-banner/section-banner-6home-min.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1672,6 +1672,20 @@ a.menu-nav__lista-box2-item__link2 {
   height: 0px;
   background: transparent;
   border: 1px solid #37613c;
+}
+
+.menu-item a {
+  font-family: "Gotham" sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+  color: #37613c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 footer {
@@ -3652,7 +3666,7 @@ h3.perguntas-frequentes__titulo2 {
 }
 
 section.odontologia {
-  background-image: url(/imagens/imagens-site/odonto-min.jpg);
+  background-image: url(../imagens/imagens-site/odonto-min.jpg);
   background-position: 137% 100%;
   background-size: 73%;
   background-repeat: no-repeat;
