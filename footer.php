@@ -111,6 +111,7 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/slick.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/acordion.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/submenu.js"></script>
 <?php wp_footer(); ?>
 </body>
 
