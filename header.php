@@ -31,7 +31,7 @@
 
           <div class="menu-nav__lista">
 
-            <nav>
+            <nav class="menu-nav__lista--nav1">
               <ul class="menu-nav__lista-box2">
                 <li class="menu-nav__lista-box2-item">
                   <a href="">
@@ -54,9 +54,12 @@
                   </a>
                 </li>
                 <a class="menu-nav__lista-box2-item__link" href="">Ouvidoria</a>
-                <a class="menu-nav__lista-box2-item__link2" href=""><i class="fas fa-search"></i> Pesquisar</a>
+                <form class="apice-busca" action="<?php echo home_url( '/' ); ?>" method="get">
+                  <button type="submit" for="search"> <i class="fas fa-search"></i></button>
+                  <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" />
+                </form>
               </ul>
-
+              <div class="menu-mobile-icon"></div>
             </nav>
 
 
