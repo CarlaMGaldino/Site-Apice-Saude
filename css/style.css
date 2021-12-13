@@ -1538,13 +1538,49 @@ ul.menu-nav__lista-box2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 27px;
+}
+
+li#menu-item-59,
+li#menu-item-60 {
+  position: relative;
+}
+
+li#menu-item-59 .sub-menu,
+li#menu-item-60 .sub-menu {
+  position: absolute;
+  top: 20px;
+  opacity: 0;
+  visibility: hidden;
+  background: #81b887;
+}
+
+li#menu-item-59 .hover-active.sub-menu,
+li#menu-item-60 .hover-active.sub-menu {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+ul.sub-menu {
+  width: 330px;
+  padding: 0 10px;
+}
+
+ul.sub-menu .menu-item {
+  padding: 0 0 15px 0;
+  border-bottom: 1px solid #37613c;
+}
+
+ul.sub-menu .menu-item a {
+  padding: 10px 0;
 }
 
 .fa,

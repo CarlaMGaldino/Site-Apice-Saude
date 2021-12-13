@@ -71,7 +71,7 @@
             wp_nav_menu( $args );
             ?>
 
-            <nav>
+            <!-- <nav>
               <ul class="menu-nav__lista-box1">
                 <a href="">
                   <li class="menu-nav__lista-box1-item">Home</li>
@@ -92,7 +92,7 @@
                   <li class="menu-nav__lista-box1-item">Laboratório</li>
                 </a>
               </ul>
-            </nav>
+            </nav> -->
           </div>
         </div>
       </div>

@@ -32,9 +32,44 @@ header.menu-nav {
 ul.menu-nav__lista-box1,
 ul.menu-nav__lista-box2 {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 27px;
+}
+
+li#menu-item-59,
+li#menu-item-60 {
+  position: relative;
+}
+
+li#menu-item-59 .sub-menu,
+li#menu-item-60 .sub-menu {
+  position: absolute;
+  top: 20px;
+  opacity: 0;
+  visibility: hidden;
+  background: #81b887;
+}
+
+li#menu-item-59 .hover-active.sub-menu,
+li#menu-item-60 .hover-active.sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+}
+
+ul.sub-menu {
+  width: 330px;
+  padding: 0 10px;
+}
+
+ul.sub-menu .menu-item {
+  padding: 0 0 15px 0;
+  border-bottom: 1px solid #37613c;
+}
+
+ul.sub-menu .menu-item a {
+  padding: 10px 0;
 }
 
 .fa,
