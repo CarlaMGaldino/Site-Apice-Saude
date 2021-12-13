@@ -2,7 +2,7 @@
 @import "breakpoint";
 
 section.amas-saude__banner {
-  padding: 278px 0px 0px 0px;
+  padding: 150px 0px 0px 0px;
 }
 
 .amas-saude__banner-conteudo {
@@ -17,6 +17,7 @@ section.amas-saude__banner {
 .amas-saude__banner-box-img {
   width: 50%;
   display: flex;
+  align-items: center;
 }
 
 h3.amas-saude__banner-box-titulo1 {
@@ -113,5 +114,13 @@ p.guia-beneficiario__paragrafo4 {
   p.amas-saude__banner-paragrafo5 {
     font-size: 16px;
     margin-bottom: 20px;
+  }
+
+  .amas-saude__banner p.guia-beneficiario__paragrafo1,
+  .amas-saude__banner p.guia-beneficiario__paragrafo2,
+  .amas-saude__banner p.guia-beneficiario__paragrafo3,
+  .amas-saude__banner p.guia-beneficiario__paragrafo4 {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
